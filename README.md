@@ -38,8 +38,7 @@ Yes, technically Ubuntu is more widely used and therefore compatible with applic
   6. Type nixos-generate-config --root /mnt.
   7. Navigate to /mnt/etc/nixos (cd /mnt/etc/nixos)
   8. Remove the default configuration.nix (rm configuration.nix)
-  9. Type nix-env -i git-hub (This installs Git to the liveUSB)
-  10. Type git clone https://github.com/himynameisxtd/GearOS/configuration.nix (This specifically clones the latest config file to /etc/nixos)
-  11. Use your favorite text editor (VIM, right?) to check and tweak the config file to your specific needs. The most popular thing to do will likely be switching the default DE from KDE (more resource-heavy) to XFCE (very lightweight, can make decade-old computers run beautifully).
-  12. Type nixos-install, and everything should be taken care of from there!
+  9. Type wget https://github.com/himynameisxtd/GearOS/blob/master/configuration.nix (This specifically clones the latest *Stable* config file to /etc/nixos)
+  10. Use your favorite text editor (VIM, right?) to check and tweak the config file to your specific needs. The most popular thing to do will likely be switching the default DE from KDE (more resource-heavy) to XFCE (very lightweight, can make decade-old computers run beautifully).
+  11. Type nixos-install, and everything should be taken care of from there!
 These guidelines are simply, well, guidelines. Consult the NixOS manual if things don't work out the way it should, or feel free to post an issue on our Github page!
