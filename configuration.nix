@@ -53,7 +53,7 @@
   firefox
   chromium
   ecj
-  ## eclipses.eclipse.sdk
+  eclipses.eclipse-sdk
   n2048 
   kdeApplications.kdenlive
   git-hub
@@ -63,6 +63,9 @@
   sudo
   ranger
   w3m
+  jdk7 ## Technically, both JDK7 and JDK8 are untested.
+  jdk  ## They both shouldn't cause issues, though.
+       ## I will still push to Untested just to keep things consistent.
   ];
 
   # List services that you want to enable:
