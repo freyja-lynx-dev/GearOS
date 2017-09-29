@@ -59,6 +59,7 @@
   n2048 
   kdeApplications.kdenlive
   git-hub
+  gitAndTools.gitFull
   vim
   emacs
   nano
