@@ -16,8 +16,8 @@
       ./hardware-configuration.nix
     ];
   ## The following lines are for testing in a VM. Enable only if needed.
-  ## virtualisation.virtualbox.guest.enable = true;
-  ## boot.initrd.checkJournalingFS = false;
+  virtualisation.virtualbox.guest.enable = true;
+  boot.initrd.checkJournalingFS = false;
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -33,7 +33,7 @@
 
   networking.hostName = "gearos"; # Define your hostname.
   ## Comment the following line out on systems that will only be connected via Ethernet.
-  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  ## networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Select internationalisation properties.
   # i18n = {
@@ -80,7 +80,7 @@
   # networking.firewall.enable = false;
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  # services.printing.enable = true;
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
