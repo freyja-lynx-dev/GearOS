@@ -3,27 +3,46 @@ Welcome to GearOS! GearOS is based off of NixOS version 17.03, but will be updat
 
 Currently, we include:
   wget,
+
   android-studio,
+
   firefox,
+
   chromium,
+
   Eclipse Java Compiler,
+
   Eclipse Neon,
+
   n2048,
+
   Kdenlive,
+
   git-hub,
+
   vim,
+
   emacs,
+
   nano,
+
   sudo,
+
   ranger,
-  w3m;
+
+  w3m
+
+  openJDK7
+
+  openJDK8;
+
 with more packages to be added as requested/wanted!
 
 # Why Linux? Isn't Windows just fine?
 Linux is advantageous for a variety of reasons. We'll list them for simlpicity:
   1. Linux is more efficient, and can run on weaker computers while retaining usability.
   2. The Linux command line integrates nicely with git, making it easy to manage Git repositories.
-  3. Linux is free, FLOSS applications are free; Windows costs money, and proprietary software costs money. This lowers the   barrier to entry for less well-funded teams, and allows teams to have equal access to a working software suite without needingto fork up the money or hope for sponsors.
+  3. Linux is free, FLOSS applications are free; Windows costs money, and proprietary software costs money. This lowers the barrier to entry for less well-funded teams, and allows teams to have equal access to a working software suite without needing to fork up the money or hope for sponsors.
   4. Adjusting to Linux from Windows takes little time, and many converts report loving Linux much more than Windows after learning the differences.
 
 # Why NixOS? Isn't Ubuntu more compatible?

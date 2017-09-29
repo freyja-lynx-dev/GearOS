@@ -16,24 +16,26 @@
       ./hardware-configuration.nix
     ];
   ## The following lines are for testing in a VM. Enable only if needed.
-  virtualisation.virtualbox.guest.enable = true;
-  boot.initrd.checkJournalingFS = false;
+  ## virtualisation.virtualbox.guest.enable = true;
+  ## boot.initrd.checkJournalingFS = false;
 
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
   ## These next three lines are for EFI enabled systems ONLY.
   ## Do not uncomment on Legacy systems. It'll break everything.
+ 
   # boot.loader.grub.efiSupport = true;
   # boot.loader.grub.efiInstallAsRemovable = true;
   # boot.loader.efi.efiSysMountPoint = "/boot/efi";
+ 
   # Define on which hard drive you want to install Grub.
   ## By default, this should be /dev/sda, but DOUBLE CHECK.
   boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
 
   networking.hostName = "gearos"; # Define your hostname.
   ## Comment the following line out on systems that will only be connected via Ethernet.
-  ## networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Select internationalisation properties.
   # i18n = {
@@ -80,7 +82,7 @@
   # networking.firewall.enable = false;
 
   # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  services.printing.enable = true;
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
